@@ -1,4 +1,7 @@
-﻿namespace OppgaveKHBE0424;
+﻿using System;
+using System.Collections.Generic;
+
+namespace OppgaveKHBE0424;
 
 
 
@@ -40,7 +43,7 @@ class Program
         Console.WriteLine($"Er student: {erStudent}");
         Console.WriteLine($"Kjønn: {kjønn}");
         Console.WriteLine($"Fødselsdato: {fødselsdato.ToShortDateString()}");
-        Console.WriteLine($"Alder: {alder}");
+        //Console.WriteLine($"Alder: {alder}");
         // Console.WriteLine($"Fødselsdato: {fødselsdato}");
 
         /*
@@ -75,8 +78,8 @@ class Program
         List<Person> personer = new List<Person>();
 
         personer.Add(new Person("William", 30, 1.86, false, 'M', new DateTime(1995, 1, 1)));
-        personer.Add(new Person("Tuva", 29,  true, 'F', new DateTime(1995, 8, 6)));
-        personer.Add(new Person("Gary", 30,  false, 'M', new DateTime(1995, 4, 17)));
+        personer.Add(new Person("Tuva", 29, 1.77, true, 'F', new DateTime(1995, 8, 6)));
+        personer.Add(new Person("Gary", 30, 1.68, false, 'M', new DateTime(1995, 4, 17)));
 
         Console.WriteLine("\nPersoner i listen:");
         foreach (var person in personer)
