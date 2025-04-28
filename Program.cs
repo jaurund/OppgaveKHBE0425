@@ -24,4 +24,14 @@ class Program
         */
         Console.WriteLine("Hello, World!");
     }
+
+    	public static double Add(double a, double b) 
+		{
+		  return a + b;
+		}
+		
+		public static void AddVoid(double a, double b) 
+		{
+		  Console.WriteLine(a + b);
+		}
 }
